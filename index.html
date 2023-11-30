@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-item">
+            <a href="#NhanVien" class="navbar-title">Nhân viên</a>
+            <div class="navbar-subitem">
+                <a href="#TimNhanVien" class="subitem">Tìm nhân viên</a>
+                <a href="#ThemNhanVien" class="subitem">Thêm nhân viên</a>
+                <a href="#SuaNhanVien" class="subitem">Sửa thông tin nhân viên</a>
+                <a href="#NhapXuatNhanVien" class="subitem">Nhập - Xuất</a>
+                <a href="#ThoiViec" class="subitem">Danh sách thôi việc</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="guide-container" id="NhanVien">
+            <h1>Nhân viên</h1>
+            <p class="lead">Hướng dẫn các chức năng quản lý nhân viên của cửa hàng</p>
+            <p>
+                Để truy cập các chức năng quản lý nhân viên, từ giao diện trang chủ nhân viên chọn vào chức năng 
+                <span class="action">Nhân viên</span> <span class="action-arrow">></span> <span class="action">Danh sách nhân viên</span>
+            </p>
+            <figure>
+                <img src="./img/1.png" alt="">
+                <figcaption>Ảnh minh hoạ giao diện chính</figcaption>
+            </figure>
+            <p>
+                Chương trình sẽ hiện giao diện nhân viên và danh sách các nhân viên hiện còn đang làm tại cửa hàng, tại đây nhân viên có thể thực hiện các chức năng như:  <strong>tìm nhân viên, thêm nhân viên, sửa thông tin nhân viên, làm mới danh sách nhân viên, nhập /xuất danh sách nhân viên từ file excel</strong>.
+            </p>
+            <figure>
+                <img src="./img/2.png" alt="">
+                <figcaption>Ảnh minh họa chương trình danh sách nhân viên</figcaption>
+            </figure>
+
+            <!-- Tìm nhân viên  -->
+            <h2 id="TimNhanVien">Tìm nhân viên</h2>
+            <p>
+                Để tìm thông tin nhân viên có trong hệ thống hay không nhân viên có thể nhập mã nhân viên vào ô <span class="action">Tìm nhân viên</span> và nhấn chọn chức năng <span class="action">Tìm kiếm</span>. Nếu nhân viên có trong hệ thống thì thông tin của nhân viên tương ứng sẽ được hiển thị trong danh sách nhân viên trên giao diện nếu không có thì sẽ hiển thông báo.
+            </p>
+            <figure>
+                <img src="./img/3.png" alt="">
+                <figcaption>Ảnh minh họa chức năng tìm kiếm</figcaption>
+            </figure>
+
+            <!-- Thêm nhân viên  -->
+            <h2 id="ThemNhanVien">Thêm nhân viên</h2>
+            <p>
+                Để thêm một nhân viên mới, nhân viên nhấn chọn chức năng <span class="action">Thêm NV</span> trên màn hình.
+            </p>
+            <figure>
+                <img src="./img/4.png" alt="">
+                <figcaption>Ảnh minh họa chức năng thêm nhân viên mới</figcaption>
+            </figure>
+            <p>
+                Hệ thống sẽ hiển thị giao diện nhập thông tin nhân viên, tiếp đến nhân viên nhập đầy đủ thông tin của nhân viên và nhấn nút <span class="action">Thêm NV</span> trên màn hình sau đó hệ thống sẽ hiển thị thông báo thêm nhân viên thành công và nhân viên nhấn <span class="action">OK</span> trên hộp thoại, sau đó hệ thống quay lại giao diện danh sách nhân viên.
+            </p>
+            <figure>
+                <img src="./img/5.png" alt="">
+                <figcaption>Ảnh minh họa biểu mẫu điền thông tin nhân viên</figcaption>
+            </figure>
+
+            <!-- Sửa thông tin nhân viên  -->
+            <h2 id="SuaNhanVien">Cập nhật thông tin nhân viên</h2>
+            <p>
+                Để cập nhật thông tin nhân viên nhân viên click chọn <i>nhân viên trong danh sách nhân viên</i> muốn cập nhật. Sau đó nhấn chọn chức năng <span class="action">Sửa thông tin NV</span>.
+            </p>
+            Nếu nhân viên chưa click chọn nhân viên mà nhấn chọn chức năng Sửa thông tin NV thì hệ thống sẽ hiển thị thông báo cho nhân viên biết
+            <figure>
+                <img src="./img/6.png" alt="">
+                <figcaption>Ảnh minh họa chức năng cập nhật thông tin nhân viên</figcaption>
+            </figure>
+            <p>
+                Hệ thống sẽ hiển thị giao diện thông tin nhân viên gồm các thông tin của nhân viên đã click chọn. Khi thực hiện xong các thay đổi thông tin cần thiết, nhân viên nhấn nút <span class="action">Cập nhật</span> để lưu lại những thay đổi thông tin hoặc nhân viên có thể nhấn nút <span class="action">Quay lại</span> để trở lại giao diện Danh sách nhân viên.
+            </p>
+            <figure>
+                <img src="./img/7.png" alt="">
+                <figcaption>Ảnh minh họa nhập thông tin cập nhật</figcaption>
+            </figure>
+
+            <!-- Nhập xuất thông tin nhân viên  -->
+            <h2 id="NhapXuatNhanVien">Nhập - Xuất thông tin nhân viên</h2>
+            <p>
+                Để thuận tiên cho việc thêm nhân viên mới nhân viên có thể nhân viên thông qua file Excel bằng cách nhấn chọn chức năng <span class="action">Nhập danh sách NV</span> trên màn hình. Sau đó hệ thống sẽ hiển thị hộp thoại cho phép nhân viên chọn file từ dialog mà nhân viên đã chuẩn bị trong máy và nhấn <span class="action">Open</span>. Nếu thêm file thành công thì hệ thống sẽ hiển thị thông tin của những nhân viên có trong file Excel lên màn hình.
+            </p>
+            <figure>
+                <img src="./img/8.png" alt="">
+                <figcaption>Ảnh minh họa chức năng Nhập danh sách nhân viên từ file Excel</figcaption>
+            </figure>
+
+            <div class="alert">Hãy chú ý  file Excel phải đầy đủ các thông tin như ảnh minh họa bên dưới thì mới thành công nha không thì hệ thống sẽ thông báo lỗi đó.</div>
+            <figure>
+                <img src="./img/9.png" alt="">
+                <figcaption>Ảnh minh họa file Excel thông tin nhân viên cần nhập</figcaption>
+            </figure>
+
+            <p>
+                Tương tự nếu nhân viên muốn xuất danh sách toàn bộ thông tin nhân viên đang làm việc nhân viên có thể nhấn nút <span class="action">Xuất danh sách NV</span> trên giao diện. Sau đó hệ thống sẽ hiển thị hộp thoại cho phép nhân viên chọn vị trí mà nhân viên muốn lưu về máy từ dialog, sau đó nhấn <span class="action">Save</span>.
+            </p>
+            <figure>
+                <img src="./img/10.png" alt="">
+                <figcaption>Ảnh minh họa file Excel thông tin nhân viên cần nhập</figcaption>
+            </figure>
+
+            <!-- Thôi việc  -->
+            <h2 id="ThoiViec">Danh sách thôi việc</h2>
+            <p>
+                Từ giao diện trang chủ nhân viên chọn vào chức năng <span class="action">Nhân viên</span> <span class="action-arrow">></span> <span class="action">Danh sách thôi việc</span>
+            </p>
+            <p>
+                Chương trình sẽ hiện giao diện nhân viên và danh sách các nhân viên đã thôi việc , tại đây nhân viên có thể thực hiện các chức năng như:  tìm nhân viên, sửa thông tin nhân viên, làm mới danh sách nhân viên, xuất danh sách nhân viên ra file excel với các thao tương tự như ở giao diện Danh sách nhân viên.
+            </p>
+
+            <figure>
+                <img src="./img/11.png" alt="">
+                <figcaption>Ảnh minh họa chức năng</figcaption>
+            </figure>
+
+            <p>
+                Điều khác biệt ở giao diện Danh sách thôi việc là nhân viên có thể thay đổi trạng thái làm việc của nhân viên đã thôi việc thành đang làm trong trường hợp nhân viên đó đi làm lại mà thông tin của nhân viên đó đã được lưu trong hệ thống trước đó. Để thực hiện, đầu tiên nhân viên nhập mã nhân viên đó vào ô <span class="action">Nhập mã nhân viên</span> rồi sau đó nhấn vào chức năng <span class="action">Khôi phục nhanh</span>, hệ thống sẽ cập nhật trạng thái làm việc của nhân viên đó và thông tin của nhân viên đó sẽ<strong> không được hiển thị </strong>ở giao diện Danh sách thôi việc nữa mà sẽ được hiển thị ở bên giao diện Danh sách nhân viên
+            </p>
+
+            
+            <figure>
+                <img src="./img/12.png" alt="">
+                <figcaption>Ảnh minh họa chức năng khôi phục nhanh</figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+
+</html>
